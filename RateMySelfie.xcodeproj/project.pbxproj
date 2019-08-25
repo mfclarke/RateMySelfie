@@ -3,67 +3,172 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F18BA96F2312865D00D76C8D /* SnapshottingTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18BA96E2312865D00D76C8D /* SnapshottingTestCase.swift */; };
+		F18BA9712312868800D76C8D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18BA9702312868800D76C8D /* Extensions.swift */; };
+		F192A5F923122B3A00E74705 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = F192A5F823122B3A00E74705 /* SnapshotTesting */; };
+		F1995DB5231278F800945FFA /* TestData.h in Headers */ = {isa = PBXBuildFile; fileRef = F1995DB3231278F800945FFA /* TestData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1995DBA2312790500945FFA /* TestData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1995DB1231278F800945FFA /* TestData.framework */; };
+		F1995DBC2312792F00945FFA /* SavedFaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1995DBB2312792F00945FFA /* SavedFaces.swift */; };
+		F1995DBD2312797700945FFA /* RateMySelfieUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */; };
+		F1995DBE23127A0900945FFA /* TestsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1995DAA2312613400945FFA /* TestsAssets.xcassets */; };
+		F1995DC023127A7000945FFA /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1995DBF23127A7000945FFA /* Namespace.swift */; };
 		F1D0A45B23120AF400921FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A45A23120AF400921FB9 /* AppDelegate.swift */; };
 		F1D0A45D23120AF400921FB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A45C23120AF400921FB9 /* SceneDelegate.swift */; };
-		F1D0A45F23120AF400921FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A45E23120AF400921FB9 /* ViewController.swift */; };
 		F1D0A46223120AF400921FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D0A46023120AF400921FB9 /* Main.storyboard */; };
 		F1D0A46423120AF600921FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D0A46323120AF600921FB9 /* Assets.xcassets */; };
 		F1D0A46723120AF600921FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D0A46523120AF600921FB9 /* LaunchScreen.storyboard */; };
-		F1D0A47223120AF600921FB9 /* RateMySelfieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A47123120AF600921FB9 /* RateMySelfieTests.swift */; };
+		F1D0A47D23120B1B00921FB9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A47C23120B1B00921FB9 /* CameraViewController.swift */; };
+		F1D0A47F23120B4100921FB9 /* FaceObservationOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A47E23120B4100921FB9 /* FaceObservationOverlayView.swift */; };
+		F1D0A48123120B6900921FB9 /* SavedFacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A48023120B6900921FB9 /* SavedFacesDataSource.swift */; };
+		F1D0A49023120B8700921FB9 /* RateMySelfieUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */; };
+		F1D0A49723120B8700921FB9 /* SavedFacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A49623120B8700921FB9 /* SavedFacesTests.swift */; };
+		F1D0A49923120B8700921FB9 /* RateMySelfieUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F1D0A48923120B8700921FB9 /* RateMySelfieUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1D0A49C23120B8700921FB9 /* RateMySelfieUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */; };
+		F1D0A49D23120B8700921FB9 /* RateMySelfieUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1D0A4A723120B9C00921FB9 /* SavedFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A4A523120B9C00921FB9 /* SavedFace.swift */; };
+		F1D0A4A823120B9C00921FB9 /* SavedFacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D0A4A623120B9C00921FB9 /* SavedFacesViewController.swift */; };
+		F1D0A4AA23120BA500921FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1D0A4A923120BA500921FB9 /* Main.storyboard */; };
+		F1D0A4AD23120E3000921FB9 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F1D0A4AF23120E3000921FB9 /* Localizable.stringsdict */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1D0A46E23120AF600921FB9 /* PBXContainerItemProxy */ = {
+		F1D0A49123120B8700921FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D0A44F23120AF400921FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D0A48623120B8700921FB9;
+			remoteInfo = RateMySelfieUI;
+		};
+		F1D0A49323120B8700921FB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F1D0A44F23120AF400921FB9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F1D0A45623120AF400921FB9;
 			remoteInfo = RateMySelfie;
 		};
+		F1D0A49A23120B8700921FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D0A44F23120AF400921FB9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D0A48623120B8700921FB9;
+			remoteInfo = RateMySelfieUI;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F1D0A4A123120B8700921FB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1D0A49D23120B8700921FB9 /* RateMySelfieUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F18BA96E2312865D00D76C8D /* SnapshottingTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshottingTestCase.swift; sourceTree = "<group>"; };
+		F18BA9702312868800D76C8D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F1995DAA2312613400945FFA /* TestsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestsAssets.xcassets; sourceTree = "<group>"; };
+		F1995DB1231278F800945FFA /* TestData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1995DB3231278F800945FFA /* TestData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestData.h; sourceTree = "<group>"; };
+		F1995DB4231278F800945FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1995DBB2312792F00945FFA /* SavedFaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFaces.swift; sourceTree = "<group>"; };
+		F1995DBF23127A7000945FFA /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
 		F1D0A45723120AF400921FB9 /* RateMySelfie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RateMySelfie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D0A45A23120AF400921FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1D0A45C23120AF400921FB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1D0A45E23120AF400921FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1D0A46123120AF400921FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1D0A46323120AF600921FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1D0A46623120AF600921FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1D0A46823120AF600921FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1D0A46D23120AF600921FB9 /* RateMySelfieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateMySelfieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1D0A47123120AF600921FB9 /* RateMySelfieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateMySelfieTests.swift; sourceTree = "<group>"; };
-		F1D0A47323120AF600921FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D0A47C23120B1B00921FB9 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		F1D0A47E23120B4100921FB9 /* FaceObservationOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceObservationOverlayView.swift; sourceTree = "<group>"; };
+		F1D0A48023120B6900921FB9 /* SavedFacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFacesDataSource.swift; sourceTree = "<group>"; };
+		F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateMySelfieUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D0A48923120B8700921FB9 /* RateMySelfieUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RateMySelfieUI.h; sourceTree = "<group>"; };
+		F1D0A48A23120B8700921FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D0A48F23120B8700921FB9 /* RateMySelfieSnapshotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateMySelfieSnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D0A49623120B8700921FB9 /* SavedFacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedFacesTests.swift; sourceTree = "<group>"; };
+		F1D0A49823120B8700921FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1D0A4A523120B9C00921FB9 /* SavedFace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFace.swift; sourceTree = "<group>"; };
+		F1D0A4A623120B9C00921FB9 /* SavedFacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedFacesViewController.swift; sourceTree = "<group>"; };
+		F1D0A4A923120BA500921FB9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F1D0A4AE23120E3000921FB9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F1995DAE231278F800945FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1995DBD2312797700945FFA /* RateMySelfieUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D0A45423120AF400921FB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D0A49C23120B8700921FB9 /* RateMySelfieUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D0A48423120B8700921FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1D0A46A23120AF600921FB9 /* Frameworks */ = {
+		F1D0A48C23120B8700921FB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1995DBA2312790500945FFA /* TestData.framework in Frameworks */,
+				F1D0A49023120B8700921FB9 /* RateMySelfieUI.framework in Frameworks */,
+				F192A5F923122B3A00E74705 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1995DB2231278F800945FFA /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				F1995DBF23127A7000945FFA /* Namespace.swift */,
+				F1995DBB2312792F00945FFA /* SavedFaces.swift */,
+				F1995DAA2312613400945FFA /* TestsAssets.xcassets */,
+				F1995DB3231278F800945FFA /* TestData.h */,
+				F1995DB4231278F800945FFA /* Info.plist */,
+			);
+			path = TestData;
+			sourceTree = "<group>";
+		};
+		F1995DB92312790500945FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1D0A44E23120AF400921FB9 = {
 			isa = PBXGroup;
 			children = (
 				F1D0A45923120AF400921FB9 /* RateMySelfie */,
-				F1D0A47023120AF600921FB9 /* RateMySelfieTests */,
+				F1D0A48823120B8700921FB9 /* RateMySelfieUI */,
+				F1D0A49523120B8700921FB9 /* RateMySelfieSnapshotTests */,
+				F1995DB2231278F800945FFA /* TestData */,
 				F1D0A45823120AF400921FB9 /* Products */,
+				F1995DB92312790500945FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				F1D0A45723120AF400921FB9 /* RateMySelfie.app */,
-				F1D0A46D23120AF600921FB9 /* RateMySelfieTests.xctest */,
+				F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */,
+				F1D0A48F23120B8700921FB9 /* RateMySelfieSnapshotTests.xctest */,
+				F1995DB1231278F800945FFA /* TestData.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,27 +188,81 @@
 			children = (
 				F1D0A45A23120AF400921FB9 /* AppDelegate.swift */,
 				F1D0A45C23120AF400921FB9 /* SceneDelegate.swift */,
-				F1D0A45E23120AF400921FB9 /* ViewController.swift */,
+				F1D0A47C23120B1B00921FB9 /* CameraViewController.swift */,
+				F1D0A47E23120B4100921FB9 /* FaceObservationOverlayView.swift */,
+				F1D0A48023120B6900921FB9 /* SavedFacesDataSource.swift */,
 				F1D0A46023120AF400921FB9 /* Main.storyboard */,
 				F1D0A46323120AF600921FB9 /* Assets.xcassets */,
 				F1D0A46523120AF600921FB9 /* LaunchScreen.storyboard */,
 				F1D0A46823120AF600921FB9 /* Info.plist */,
+				F1D0A4AF23120E3000921FB9 /* Localizable.stringsdict */,
 			);
 			path = RateMySelfie;
 			sourceTree = "<group>";
 		};
-		F1D0A47023120AF600921FB9 /* RateMySelfieTests */ = {
+		F1D0A48823120B8700921FB9 /* RateMySelfieUI */ = {
 			isa = PBXGroup;
 			children = (
-				F1D0A47123120AF600921FB9 /* RateMySelfieTests.swift */,
-				F1D0A47323120AF600921FB9 /* Info.plist */,
+				F1D0A4A523120B9C00921FB9 /* SavedFace.swift */,
+				F1D0A4A623120B9C00921FB9 /* SavedFacesViewController.swift */,
+				F1D0A4A923120BA500921FB9 /* Main.storyboard */,
+				F1D0A48923120B8700921FB9 /* RateMySelfieUI.h */,
+				F1D0A48A23120B8700921FB9 /* Info.plist */,
 			);
-			path = RateMySelfieTests;
+			path = RateMySelfieUI;
+			sourceTree = "<group>";
+		};
+		F1D0A49523120B8700921FB9 /* RateMySelfieSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1D0A49623120B8700921FB9 /* SavedFacesTests.swift */,
+				F18BA96E2312865D00D76C8D /* SnapshottingTestCase.swift */,
+				F18BA9702312868800D76C8D /* Extensions.swift */,
+				F1D0A49823120B8700921FB9 /* Info.plist */,
+			);
+			path = RateMySelfieSnapshotTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F1995DAC231278F800945FFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1995DB5231278F800945FFA /* TestData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D0A48223120B8700921FB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D0A49923120B8700921FB9 /* RateMySelfieUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		F1995DB0231278F800945FFA /* TestData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1995DB6231278F800945FFA /* Build configuration list for PBXNativeTarget "TestData" */;
+			buildPhases = (
+				F1995DAC231278F800945FFA /* Headers */,
+				F1995DAD231278F800945FFA /* Sources */,
+				F1995DAE231278F800945FFA /* Frameworks */,
+				F1995DAF231278F800945FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestData;
+			productName = ViewDummyData;
+			productReference = F1995DB1231278F800945FFA /* TestData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F1D0A45623120AF400921FB9 /* RateMySelfie */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1D0A47623120AF600921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfie" */;
@@ -109,32 +270,56 @@
 				F1D0A45323120AF400921FB9 /* Sources */,
 				F1D0A45423120AF400921FB9 /* Frameworks */,
 				F1D0A45523120AF400921FB9 /* Resources */,
+				F1D0A4A123120B8700921FB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F1D0A49B23120B8700921FB9 /* PBXTargetDependency */,
 			);
 			name = RateMySelfie;
 			productName = RateMySelfie;
 			productReference = F1D0A45723120AF400921FB9 /* RateMySelfie.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1D0A46C23120AF600921FB9 /* RateMySelfieTests */ = {
+		F1D0A48623120B8700921FB9 /* RateMySelfieUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1D0A47923120AF600921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieTests" */;
+			buildConfigurationList = F1D0A49E23120B8700921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieUI" */;
 			buildPhases = (
-				F1D0A46923120AF600921FB9 /* Sources */,
-				F1D0A46A23120AF600921FB9 /* Frameworks */,
-				F1D0A46B23120AF600921FB9 /* Resources */,
+				F1D0A48223120B8700921FB9 /* Headers */,
+				F1D0A48323120B8700921FB9 /* Sources */,
+				F1D0A48423120B8700921FB9 /* Frameworks */,
+				F1D0A48523120B8700921FB9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F1D0A46F23120AF600921FB9 /* PBXTargetDependency */,
 			);
-			name = RateMySelfieTests;
-			productName = RateMySelfieTests;
-			productReference = F1D0A46D23120AF600921FB9 /* RateMySelfieTests.xctest */;
+			name = RateMySelfieUI;
+			productName = RateMySelfieUI;
+			productReference = F1D0A48723120B8700921FB9 /* RateMySelfieUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1D0A48E23120B8700921FB9 /* RateMySelfieSnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D0A4A223120B8700921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieSnapshotTests" */;
+			buildPhases = (
+				F1D0A48B23120B8700921FB9 /* Sources */,
+				F1D0A48C23120B8700921FB9 /* Frameworks */,
+				F1D0A48D23120B8700921FB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D0A49223120B8700921FB9 /* PBXTargetDependency */,
+				F1D0A49423120B8700921FB9 /* PBXTargetDependency */,
+			);
+			name = RateMySelfieSnapshotTests;
+			packageProductDependencies = (
+				F192A5F823122B3A00E74705 /* SnapshotTesting */,
+			);
+			productName = RateMySelfieUITests;
+			productReference = F1D0A48F23120B8700921FB9 /* RateMySelfieSnapshotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -147,10 +332,18 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Maximilian Clarke";
 				TargetAttributes = {
+					F1995DB0231278F800945FFA = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
 					F1D0A45623120AF400921FB9 = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					F1D0A46C23120AF600921FB9 = {
+					F1D0A48623120B8700921FB9 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					F1D0A48E23120B8700921FB9 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = F1D0A45623120AF400921FB9;
 					};
@@ -165,28 +358,50 @@
 				Base,
 			);
 			mainGroup = F1D0A44E23120AF400921FB9;
+			packageReferences = (
+				F192A5F723122B3A00E74705 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = F1D0A45823120AF400921FB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F1D0A45623120AF400921FB9 /* RateMySelfie */,
-				F1D0A46C23120AF600921FB9 /* RateMySelfieTests */,
+				F1D0A48623120B8700921FB9 /* RateMySelfieUI */,
+				F1D0A48E23120B8700921FB9 /* RateMySelfieSnapshotTests */,
+				F1995DB0231278F800945FFA /* TestData */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F1995DAF231278F800945FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1995DBE23127A0900945FFA /* TestsAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D0A45523120AF400921FB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1D0A46723120AF600921FB9 /* LaunchScreen.storyboard in Resources */,
+				F1D0A4AD23120E3000921FB9 /* Localizable.stringsdict in Resources */,
 				F1D0A46423120AF600921FB9 /* Assets.xcassets in Resources */,
 				F1D0A46223120AF400921FB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1D0A46B23120AF600921FB9 /* Resources */ = {
+		F1D0A48523120B8700921FB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D0A4AA23120BA500921FB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D0A48D23120B8700921FB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -196,31 +411,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F1995DAD231278F800945FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1995DBC2312792F00945FFA /* SavedFaces.swift in Sources */,
+				F1995DC023127A7000945FFA /* Namespace.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1D0A45323120AF400921FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D0A45F23120AF400921FB9 /* ViewController.swift in Sources */,
+				F1D0A47F23120B4100921FB9 /* FaceObservationOverlayView.swift in Sources */,
+				F1D0A48123120B6900921FB9 /* SavedFacesDataSource.swift in Sources */,
+				F1D0A47D23120B1B00921FB9 /* CameraViewController.swift in Sources */,
 				F1D0A45B23120AF400921FB9 /* AppDelegate.swift in Sources */,
 				F1D0A45D23120AF400921FB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1D0A46923120AF600921FB9 /* Sources */ = {
+		F1D0A48323120B8700921FB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D0A47223120AF600921FB9 /* RateMySelfieTests.swift in Sources */,
+				F1D0A4A723120B9C00921FB9 /* SavedFace.swift in Sources */,
+				F1D0A4A823120B9C00921FB9 /* SavedFacesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D0A48B23120B8700921FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D0A49723120B8700921FB9 /* SavedFacesTests.swift in Sources */,
+				F18BA9712312868800D76C8D /* Extensions.swift in Sources */,
+				F18BA96F2312865D00D76C8D /* SnapshottingTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F1D0A46F23120AF600921FB9 /* PBXTargetDependency */ = {
+		F1D0A49223120B8700921FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D0A48623120B8700921FB9 /* RateMySelfieUI */;
+			targetProxy = F1D0A49123120B8700921FB9 /* PBXContainerItemProxy */;
+		};
+		F1D0A49423120B8700921FB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F1D0A45623120AF400921FB9 /* RateMySelfie */;
-			targetProxy = F1D0A46E23120AF600921FB9 /* PBXContainerItemProxy */;
+			targetProxy = F1D0A49323120B8700921FB9 /* PBXContainerItemProxy */;
+		};
+		F1D0A49B23120B8700921FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D0A48623120B8700921FB9 /* RateMySelfieUI */;
+			targetProxy = F1D0A49A23120B8700921FB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -241,9 +488,74 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F1D0A4AF23120E3000921FB9 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1D0A4AE23120E3000921FB9 /* en */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F1995DB7231278F800945FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3HS8FEB4KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.TestData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1995DB8231278F800945FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3HS8FEB4KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TestData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.TestData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F1D0A47423120AF600921FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +673,7 @@
 		F1D0A47723120AF600921FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HS8FEB4KM;
@@ -379,6 +692,7 @@
 		F1D0A47823120AF600921FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HS8FEB4KM;
@@ -394,21 +708,76 @@
 			};
 			name = Release;
 		};
-		F1D0A47A23120AF600921FB9 /* Debug */ = {
+		F1D0A49F23120B8700921FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3HS8FEB4KM;
-				INFOPLIST_FILE = RateMySelfieTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RateMySelfieUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1D0A4A023120B8700921FB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3HS8FEB4KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RateMySelfieUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1D0A4A323120B8700921FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HS8FEB4KM;
+				INFOPLIST_FILE = RateMySelfieSnapshotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieSnapshotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,21 +785,19 @@
 			};
 			name = Debug;
 		};
-		F1D0A47B23120AF600921FB9 /* Release */ = {
+		F1D0A4A423120B8700921FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HS8FEB4KM;
-				INFOPLIST_FILE = RateMySelfieTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = RateMySelfieSnapshotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.maxclarke.RateMySelfieSnapshotTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,6 +808,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1995DB6231278F800945FFA /* Build configuration list for PBXNativeTarget "TestData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1995DB7231278F800945FFA /* Debug */,
+				F1995DB8231278F800945FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F1D0A45223120AF400921FB9 /* Build configuration list for PBXProject "RateMySelfie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -459,16 +835,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1D0A47923120AF600921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieTests" */ = {
+		F1D0A49E23120B8700921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F1D0A47A23120AF600921FB9 /* Debug */,
-				F1D0A47B23120AF600921FB9 /* Release */,
+				F1D0A49F23120B8700921FB9 /* Debug */,
+				F1D0A4A023120B8700921FB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D0A4A223120B8700921FB9 /* Build configuration list for PBXNativeTarget "RateMySelfieSnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D0A4A323120B8700921FB9 /* Debug */,
+				F1D0A4A423120B8700921FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F192A5F723122B3A00E74705 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F192A5F823122B3A00E74705 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F192A5F723122B3A00E74705 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1D0A44F23120AF400921FB9 /* Project object */;
 }
